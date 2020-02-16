@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+In addition to the ones pre-included in:
+Sass
+Flow
+Redux
+
 ## Available Scripts
 
 In the project directory, you can run:
