@@ -1,11 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-In addition to the ones pre-included in:
-Sass
-Flow
-Redux
+This project is a light-weight react and redux starter boilerplate that builds on top of [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This could be the right choice for you, if you would like to quickly start a fontend project based on React and Redux without worrying about all kinds of configurations (e.g. install redux related modules, editor setup, testing configuration, etc). The goal of this starter template is to allow you to jump directly into writing application logic.
+
+In addition to the libaries that ships by default with [create-react-app](https://create-react-app.dev), this starter template adds a few additional popular ones to start with:
+- [Sass](https://www.npmjs.com/package/node-sass)
+- [Flow](https://flow.org/en/docs/getting-started)
+- [Redux](https://redux.js.org/) (including [React-Redux](https://react-redux.js.org/) and [Redux-Thunk](https://www.npmjs.com/package/redux-thunk))
+- [Enzyme](https://airbnb.io/enzyme/)
+
+For the best experience, it's recommended to use [Visual Studio Code](https://code.visualstudio.com/) as the text editor since we added default settings to work with Prettier and ESLint.
+
+## Get Started
+#### Component
+Your component hierarchy starts from `src/index.js`, which has its render output already wrapped by a singleton redux store.
+
+#### Store
+Your redux store logic starts from `src/store/rootReducer.js`. You can create nested reducers via `createCombineReducers` API.
+
+#### Test
+A sample smoke test using `enzyme#shallow` is in `src/components/app/__tests__/App.test.js`. You are welcome to use whatever file structure you like to organize tests.
+
+
+## Available Scripts (provided by create-react-app)
 
 In the project directory, you can run:
 

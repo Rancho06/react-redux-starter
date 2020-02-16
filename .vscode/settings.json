@@ -1,3 +1,28 @@
 {
-	"editor.formatOnSave": true
+	// rely on the flow + eslint validation
+	"javascript.validate.enable": false,
+
+	// make it do full paths in inserted import statements
+	"javascript.preferences.importModuleSpecifier": "non-relative",
+
+	// make it always do tabs
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4,
+
+	// add a ruler line at 120 to match our prettier printWidth
+	"editor.rulers": [ 120 ],
+
+	// have flow-support use the flow from node_modules, to match versions
+	"flow.useBundledFlow": false,
+	"flow.useNPMPackagedFlow": true,
+
+	"[javascript]": {
+		"editor.formatOnSave": false
+	},
+	// always show the Eslint status bar item
+	"eslint.alwaysShowStatus": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }
